@@ -1,0 +1,19 @@
+{
+  "type": "default",
+  "components": [
+    {
+      "key": "movieName",
+      "label": "Movie Suggestions",
+      "type": "textfield"
+    },
+    {
+      "key": "happy",
+      "label": "Are you happy with the suggestion?",
+      "type": "textfield",
+      "validate": {
+        "required": true,
+        "pattern": "Yes|No"
+      }
+    }
+  ]
+}

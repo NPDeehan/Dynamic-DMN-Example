@@ -1,0 +1,35 @@
+{
+  "type": "default",
+  "components": [
+    {
+      "key": "country",
+      "label": "Your Country",
+      "type": "textfield",
+      "description": "Where are you located",
+      "validate": {
+        "required": true,
+        "pattern": "America|Germany"
+      }
+    },
+    {
+      "key": "genre",
+      "label": "Genre",
+      "type": "textfield",
+      "description": "What genre are you in the mood to watch",
+      "validate": {
+        "required": true,
+        "pattern": "Comedy|Horror|Drama"
+      }
+    },
+    {
+      "key": "quality",
+      "label": "Quality",
+      "type": "textfield",
+      "description": "Between 1 and 5 how good should the movie be?",
+      "validate": {
+        "required": true,
+        "pattern": "[1-5]"
+      }
+    }
+  ]
+}

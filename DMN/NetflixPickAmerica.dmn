@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="netflixPickAmericaDRD" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.8.1">
+  <decision id="netflixPickAmerica" name="Netflix Pick America">
+    <decisionTable id="DecisionTable_1n2y9nu">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>genre</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1jhmif4">
+          <text>"Comedy","Horror","Drama"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0x4lpqt">
+        <inputExpression id="LiteralExpression_01uqbnr" typeRef="integer">
+          <text>quality</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="movieName" typeRef="string" />
+      <rule id="DecisionRule_1j8rjku">
+        <inputEntry id="UnaryTests_14k9tag">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04usxgq">
+          <text>[1.. 2]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sd79mt">
+          <text>"Grown Ups 2"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1199uu8">
+        <inputEntry id="UnaryTests_1mt44o1">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fobarp">
+          <text>[1.. 2]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gx3hpd">
+          <text>"Leprechaun 6: Back 2 Tha Hood"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rs7lkp">
+        <inputEntry id="UnaryTests_10b1nfz">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1krvo4p">
+          <text>[1.. 2]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bpreqn">
+          <text>"The Room"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_135ucd6">
+        <inputEntry id="UnaryTests_0qrbowh">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08pja4o">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bi6jmg">
+          <text>"Space Jam"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19eumbe">
+        <inputEntry id="UnaryTests_1aa22pq">
+          <text>"Comedy","Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03j4yo4">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z0iaev">
+          <text>"Tucker and Dale vs Evil"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jjmc2z">
+        <inputEntry id="UnaryTests_1xoi7oq">
+          <text>"Horror","Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kcgzax">
+          <text>3</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1989tvu">
+          <text>"The Haunting of Hill House"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_043ktj6">
+        <inputEntry id="UnaryTests_0skv3wm">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17dymzu">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qa4ipn">
+          <text>"Call me by your Name"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gugzmd">
+        <inputEntry id="UnaryTests_1nicqxu">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yajr65">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1dltbcj">
+          <text>"Inside"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gpemc0">
+        <inputEntry id="UnaryTests_04qdua8">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ymka31">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0j4tium">
+          <text>"Fargo"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jvdo1n">
+        <inputEntry id="UnaryTests_0z3gkz1">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wyhh6z">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bufojf">
+          <text>"The Babadook"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="netflixPickAmerica">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

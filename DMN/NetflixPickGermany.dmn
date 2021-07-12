@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="netflixPickGermanyDRD" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.8.1">
+  <decision id="netflixPickGermany" name="Netflix Pick Germany">
+    <decisionTable id="DecisionTable_1n2y9nu">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>genre</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1jhmif4">
+          <text>"Comedy","Horror","Drama"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0x4lpqt">
+        <inputExpression id="LiteralExpression_01uqbnr" typeRef="integer">
+          <text>quality</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="movieName" typeRef="string" />
+      <rule id="DecisionRule_1j8rjku">
+        <inputEntry id="UnaryTests_14k9tag">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04usxgq">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1sd79mt">
+          <text>"The Angry Birds Movie"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1199uu8">
+        <inputEntry id="UnaryTests_1mt44o1">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0fobarp">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gx3hpd">
+          <text>"Unfriended"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1rs7lkp">
+        <inputEntry id="UnaryTests_10b1nfz">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1krvo4p">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bpreqn">
+          <text>"Twilight"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_135ucd6">
+        <inputEntry id="UnaryTests_0qrbowh">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08pja4o">
+          <text>[2.. 3]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bi6jmg">
+          <text>"Jumanji"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_19eumbe">
+        <inputEntry id="UnaryTests_1aa22pq">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03j4yo4">
+          <text>[2.. 3]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0z0iaev">
+          <text>"Doom"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0e0n9i4">
+        <inputEntry id="UnaryTests_07t6t0y">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1kyz0cx">
+          <text>[2.. 3]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0og89jz">
+          <text>"Step Up All In"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g8h21a">
+        <inputEntry id="UnaryTests_098qt0m">
+          <text>"Comedy","Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0nl36b9">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0fep8pb">
+          <text>"The Grand  Budapest Hotel"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_12orqts">
+        <inputEntry id="UnaryTests_0azp6zi">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mp6ub0">
+          <text>4</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15g9al0">
+          <text>"Hush"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mw1loi">
+        <inputEntry id="UnaryTests_12ykmst">
+          <text>"Comedy"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yfg89p">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_03zy43n">
+          <text>"In Bruges"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sqwveo">
+        <inputEntry id="UnaryTests_0p02n5l">
+          <text>"Horror"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1l256n0">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ywdo9y">
+          <text>"28 Days Later"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1bc5uu1">
+        <inputEntry id="UnaryTests_1qbjerh">
+          <text>"Drama"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tzklui">
+          <text>5</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0qo0gxg">
+          <text>"Casablanca"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="netflixPickGermany">
+        <dc:Bounds height="80" width="180" x="160" y="70" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
